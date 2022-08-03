@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <title>Peeriano</title>
+    <link rel="stylesheet" href="./static/main.css">
+</head>
+<body>
+<Layout class="HCF">
+    <header class="normal">
+        <sitename style="font-size: 28px">Peeriano</sitename>
+        <div class="menu">
+            <div class="item">
+                钢琴选项
+                <span>
+                    <a id="pedal">延音踏板</a>
+                </span>
+            </div>
+        </div>
+    </header>
+    <content>
+        <p>
+            <h1>Peeriano键位说明：</h1>
+            <div>
+                <card class="default">
+                    <t>通用</t>
+                    <div>左手降八度：Ctrl</div>
+                    <div>左手升八度：Shift</div>
+                    <div>右手降八度：";"</div>
+                    <div>右手升八度："'"</div>
+                </card>
+                <card class="default">
+                    <t>左手键位</t>
+                    <div>C："A"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D："W"</div>
+                    <div>E："E"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F："R"</div>
+                    <div>G："C"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A："F"</div>
+                    <div>B："V"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C+："B"</div>
+                    <div></div>
+                </card>
+                <card class="default">
+                    <t>右手键位</t>
+                    <div>C："N"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D："U"</div>
+                    <div>E："I"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F："O"</div>
+                    <div>G："P"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A："["</div>
+                    <div>B："]"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C+："\"</div>
+                    <div></div>
+                </card>
+            </div>
+        </p>
+        <p>当前左手C位：<span id="leftHandC">C1</span>&nbsp;&nbsp;&nbsp;当前右手C位：<span id="rightHandC">C2</span></p>
+        <div></div>
+        <div>
+            <h3>版本：1.0.2</h3>
+            <h3>CHANGELOG</h3>
+            <p>2022/08/03 1.0.0 Initial Release</p>
+            <p>2022/08/03 1.0.1 键位修改为更合理的设计</p>
+            <p>2022/08/03 1.0.2 修复延音踏板开启后弹奏崩溃的问题</p>
+            <p>2022/08/03 1.0.3 缓解延音踏板开启后弹奏卡顿的问题</p>
+            <p>xxxx/xx/xx 1.0.x 欢迎<a href="mailto:hi@peercat.cn">反馈bug</a>以让我更好地修改！</p>
+        </div>
+    </content>
+<!--    <div class="blank" style="height: 110px"></div>-->
+    <footer>
+
+        <a href="https://peercat.cn/">Peercat © 2022</a> All rights reserved, Powered by <a href="https://peercat.cn/uicss/">UI.CSS</a>
+        <p>
+            <img src="https://peercat.cn/备案图标.png">
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=21021102001102">
+                辽公网安备 21021102001102号
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="http://beian.miit.gov.cn/">备案号：辽ICP备2022002785号</a>
+        </p>
+
+    </footer>
+</Layout>
+<!--    <input type="checkbox" id="pedal">延音踏板-->
+    <script src="core.js"></script>
+</body>
+</html>
